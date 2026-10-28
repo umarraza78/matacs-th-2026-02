@@ -4,7 +4,7 @@
 **Reference:** MATACS-TH-2026-02
 **Role:** Associate Software Developer
 
-Time actually spent: [FILL IN HONESTLY]
+Time actually spent: 2.5 HOURS
 
 ## What this is
 
@@ -14,7 +14,7 @@ My core idea: AI only reads the proposals and pulls out facts with quotes. Plain
 
 ## How I used AI tools
 
-I used an AI assistant to help draft the documents, check my score maths and generate the flow diagram. I reviewed and edited everything, and I made the design decisions myself. [FILL IN: one real place where I disagreed with or corrected the AI, and why]
+I used an AI assistant to help draft the documents, check my score maths and generate the flow diagram. I reviewed and edited everything, and I made the design decisions myself. The AI suggested using the lowest price from any bid that passed the mandatory checks, including flagged ones. I thought a flagged bid should not set the benchmark for others, so I changed the rule to use only ranked bids and recalculated the scores.
 
 ## Files
 
