@@ -28,7 +28,7 @@ I drew the line here because AI is good at reading free text and rules are not. 
 
 **My scoring rule** (used for ranking.json):
 
-- For each weighted criterion, the best value among proposals that pass the mandatory checks gets full points. Flagged proposals still count when finding the best value.
+- For each weighted criterion, the best value among ranked proposals gets full points. Flagged proposals do not set the best value. If a flag is cleared, everything is re-scored.
 - Higher is better (experience, warranty): points = weight x value / best value.
 - Lower is better (price, timeline): points = weight x best value / value.
 - Warranty value = panel years + workmanship years.
@@ -37,11 +37,11 @@ I drew the line here because AI is good at reading free text and rules are not. 
 | Criterion | Weight | Best value | A | E |
 |---|---|---|---|---|
 | Experience | 30 | 14 installs | 14: 30.00 | 8: 17.14 |
-| Price | 25 | $231,000 (D) | $238,000: 24.26 | $242,500: 23.81 |
+| Price | 25 | $238,000 | $238,000: 25.00 | $242,500: 24.54 |
 | Timeline | 15 | 12 weeks | 12: 15.00 | 13: 13.85 |
 | Warranty | 15 | 37 years | 35: 14.19 | 37: 15.00 |
 | Team | 15 | 4 of 4 | 4: 15.00 | 4: 15.00 |
-| **Total** | 100 | | **98.5** | **84.8** |
+| **Total** | 100 | | **99.2** | **85.5** |
 
 B fails the licence check, so it is ineligible. C and D are flagged and not scored until a person reviews them.
 
